@@ -1,5 +1,8 @@
 body {
   background-color: #6fd5d0;
+  background-image: url("blobs.png");
+  background-repeat: none;
+  background-size: cover;
   font-family: "Poppins", sans-serif;
 }
 a {
