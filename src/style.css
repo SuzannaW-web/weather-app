@@ -1,7 +1,7 @@
 body {
   background-color: #6fd5d0;
   background-image: url("blobs.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
 }
@@ -104,7 +104,7 @@ main {
 
 .weather-forecast-day {
   border: solid 3px #5315ef2b;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 5px;
   background: #f9f7fe;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -112,7 +112,8 @@ main {
 
 .weather-forecast-day:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-color: #8661c1;
+  box-shadow: 0 4px 8px rgba(134, 97, 193, 0.3);
 }
 
 .weather-forecast-date {
