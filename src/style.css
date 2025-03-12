@@ -7,6 +7,7 @@ body {
 }
 a {
   color: #885df1;
+  cursor: pointer;
 }
 
 .weather-app {
@@ -19,7 +20,7 @@ a {
 
 .search-form-input {
   background-color: #f9f7fe;
-  border: 3px solid #885df1;
+  border: 3px solid #5315ef2b;
   border-radius: 10px;
   width: 80%;
   padding: 15px 20px;
@@ -27,13 +28,19 @@ a {
 }
 
 .search-form-button {
-  background-color: #885df1;
+  background-color: #5315ef80;
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
-  color: #fff;
+  color: #000;
   font-family: "Poppins", sans-serif;
   margin-left: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-form-button:hover {
+  background-color: #5315ef2b; /* Slightly darker on hover */
 }
 
 main {
@@ -58,13 +65,13 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #707070;
   line-height: 24px;
   font-weight: 500;
 }
 
 .weather-app-data-numbers {
-  color: #ef5f9a;
+  color: #da1667;
   font-weight: 700;
 }
 
@@ -95,9 +102,22 @@ main {
   margin-top: 30px;
 }
 
+.weather-forecast-day {
+  border: solid 3px #5315ef2b;
+  border-radius: 10px;
+  padding: 5px;
+  background: #f9f7fe;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-forecast-day:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .weather-forecast-date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 80%);
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -114,7 +134,7 @@ main {
   display: flex;
   margin-top: 10px;
   text-align: center;
-  color: #ef5f9a;
+  color: #da1667;
   justify-content: center;
 }
 
